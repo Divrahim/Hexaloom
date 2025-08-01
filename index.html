@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexaloom | Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body class="bg-[#0a0a0a] text-white font-sans leading-normal tracking-wider relative">
+        <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 bg-[#0a0a0a] z-[100] flex items-center justify-center">
+        <div class="flex items-center justify-center relative">
+            <img src="logo.png" alt="Loading Logo" class="preloader-logo w-24 h-auto z-10">
+            <div class="preloader-text-container overflow-hidden">
+                <h1 class="preloader-text text-4xl font-bold tracking-wider text-white">Hexaloom</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Particles background -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+    <!-- Sticky Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 hidden lg:block bg-[#0a0a0a]">
+        <div class="container mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="logo.png" alt="Hexaloom Logo" class="h-8">
+                <span class=" text-1.5xl font-bold">Hexaloom</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                <a href="#home" class="text-white hover:text-purple-400 transition duration-300 flex items-center space-x-2 rtl:space-x-reverse">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+                <a href="#about" class="text-white hover:text-purple-400 transition duration-300 flex items-center space-x-2 rtl:space-x-reverse">
+                    <i class="fas fa-user"></i>
+                    <span>من نحن</span>
+                </a>
+                <a href="#services" class="text-white hover:text-purple-400 transition duration-300 flex items-center space-x-2 rtl:space-x-reverse">
+                    <i class="fas fa-cogs"></i>
+                    <span>خدماتنا</span>
+                </a>
+                <a href="#contact" class="text-white hover:text-purple-400 transition duration-300 flex items-center space-x-2 rtl:space-x-reverse">
+                    <i class="fas fa-envelope"></i>
+                    <span>تواصل معنا</span>
+                </a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Mobile Menu Button -->
+    <div class="lg:hidden fixed top-5 right-5 z-50">
+        <button id="sidebarToggle" class="text-white text-2xl" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-40 hidden flex-col items-center justify-center space-y-6" role="dialog" aria-modal="true" dir="rtl">
+        <button id="sidebarClose" class="absolute top-5 left-5 text-white text-3xl" aria-label="إغلاق القائمة">&times;</button>
+        
+        <a href="#home" class="text-white text-2xl hover:text-purple-400 transition flex items-center space-x-2 rtl:space-x-reverse">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="#about" class="text-white text-2xl hover:text-purple-400 transition flex items-center space-x-2 rtl:space-x-reverse">
+            <i class="fas fa-user"></i>
+            <span>من نحن</span>
+        </a>
+        <a href="#services" class="text-white text-2xl hover:text-purple-400 transition flex items-center space-x-2 rtl:space-x-reverse">
+            <i class="fas fa-cogs"></i>
+            <span>خدماتنا</span>
+        </a>
+        <a href="#contact" class="text-white text-2xl hover:text-purple-400 transition flex items-center space-x-2 rtl:space-x-reverse">
+            <i class="fas fa-envelope"></i>
+            <span>تواصل معنا</span>
+        </a>
+    </div>
+    
+    <main class="relative z-10 position: relative; z-index: 10" dir="rtl">
+        <!-- قسم البداية -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-white overflow-hidden" dir="rtl">
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="cover.mp4" type="video/mp4">
+                متصفحك لا يدعم عرض الفيديو.
+            </video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+            <div id="particles-js" class="absolute inset-0 z-20"></div>
+            <div class="container mx-auto px-5 text-center relative z-30">
+                <div data-aos="fade-up">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-5 text-white" data-aos="fade-up">
+                        <span class="gradient-text">نُبدع الحلول</span><br>الرقمية بامتياز
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 opacity-90 text-white" data-aos="fade-up" data-aos-delay="100">
+                        في <strong>Hexaloom</strong>، نمزج بين الإبداع والتقنية لنُقدّم مواقع وتطبيقات ترتقي بأعمالك نحو العالمية.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <a href="#contact" class="btn-primary text-white font-medium px-8 py-3 rounded-full text-lg">
+                            <i class="fas fa-gift text-xl"></i>
+                            احصل على عرض
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-30" data-aos="fade-up" data-aos-delay="300">
+                <a href="#about" class="text-white text-2xl cursor-pointer hover:text-purple-400 transition duration-300 ease-in-out " aria-label="انزل للأسفل">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-[#121212]" dir="rtl">
+            <div class="container mx-auto px-5">
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2" data-aos="fade-right">
+                        <img src="cover.png" alt="فريق متنوع يتعاون في مشروع داخل Hexaloom" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="w-full lg:w-1/2" data-aos="fade-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-5">من نحن في <span class="gradient-text">Hexaloom</span></h2>
+                        <p class="mb-6 opacity-90">نحن فريق شغوف يضم مصممين ومطورين ومخططين استراتيجيين، نكرّس جهودنا لبناء منتجات رقمية استثنائية.</p>
+                        <p class="opacity-90">مهمتنا هي مساعدة الشركات على الازدهار في العالم الرقمي من خلال التصميم الإبداعي والتقنيات المتطورة.</p>
+                        <div class="flex space-x-8 rtl:space-x-reverse mb-6">
+                            <div>
+                                <p class="text-3xl font-bold gradient-text">50+</p>
+                                <p class="opacity-70">مشروع منجز</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold gradient-text">30+</p>
+                                <p class="opacity-70">عميل سعيد</p>
+                            </div>
+                        </div>
+                        <a href="#services" class="btn-primary text-white font-medium px-6 py-2 rounded-full text-sm">اعرف المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-[#0a0a0a] ">
+            <div class="container mx-auto px-5">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-5">خدماتنا <span class="gradient-text">المميزة</span></h2>
+                    <p class="text-lg max-w-2xl mx-auto opacity-90">حلول رقمية متكاملة ومخصصة تلبي احتياجاتك بدقة</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card rounded-xl p-8 text-center" data-aos="zoom-in">
+                        <div class="text-4xl mb-5 text-[#6c63ff]"><i class="fas fa-code"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">تطوير المواقع</h3>
+                        <p class="opacity-80 mb-5">نُنشئ مواقع متجاوبة وعالية الأداء من البداية حتى النهاية.</p>
+                        <a href="#portfolio" class="text-[#6c63ff] text-sm font-medium">اعرف المزيد <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="service-card rounded-xl p-8 text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-4xl mb-5 text-[#00b4d8]"><i class="fas fa-palette"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">تصميم واجهات المستخدم</h3>
+                        <p class="opacity-80 mb-5">نُصمم واجهات مستخدم جذابة وسهلة الاستخدام.</p>
+                        <a href="#portfolio" class="text-[#00b4d8] text-sm font-medium">اعرف المزيد <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="service-card rounded-xl p-8 text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-4xl mb-5 text-[#8a2be2]"><i class="fas fa-bullhorn"></i></div>
+                        <h3 class="text-xl font-semibold mb-3">التسويق الرقمي</h3>
+                        <p class="opacity-80 mb-5">نُعزز حضورك الرقمي ونصل إلى جمهورك بفعالية.</p>
+                        <a href="#portfolio" class="text-[#8a2be2] text-sm font-medium">اعرف المزيد <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-[#121212]">
+            <div class="container mx-auto px-5">
+              <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">أعمالنا <span class="gradient-text">المميزة</span></h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90">لمحة عن مشاريعنا الناجحة وتعاوناتنا المثمرة</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left">
+                  <img src="2.PNG" alt="منصة تجارة إلكترونية" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">موقع خاص بشركة </h3>
+                    <p class="text-white opacity-90">تطوير مواقع</p>
+                  </div>
+                </div>
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left" data-aos-delay="100">
+                  <img src="3.PNG" alt="تطبيق مالي" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">موقع خاص بشركة </h3>
+                    <p class="text-white opacity-90">تصميم واجهات</p>
+                  </div>
+                </div>
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left" data-aos-delay="200">
+                  <img src="4.PNG" alt="موقع شركة تقنية" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">بروتفليو</h3>
+                    <p class="text-white opacity-90">تطوير مواقع</p>
+                  </div>
+                </div>
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left" data-aos-delay="300">
+                  <img src="5.PNG" alt="حملة على السوشيال ميديا" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">موقع لفني سيراميك</h3>
+                    <p class="text-white opacity-90">حملة تسويق رقمي</p>
+                  </div>
+                </div>
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left" data-aos-delay="400">
+                  <img src="6.PNG" alt="علامة تجارية عقارية" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">موقع لشركتنا الخاصه</h3>
+                    <p class="text-white opacity-90">تصميم الهوية</p>
+                  </div>
+                </div>
+                <div class="portfolio-item rounded-xl overflow-hidden relative" data-aos="flip-left" data-aos-delay="500">
+                  <img src="1.PNG" alt="هوية بصرية طبية" class="w-full h-full object-cover">
+                  <div class="portfolio-overlay">
+                    <h3 class="text-xl font-semibold text-white">تسجيل دخول خاص بلعبة رعب</h3>
+                    <p class="text-white opacity-90">تصميم واجهات </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-10" data-aos="fade-up">
+                <a href="#contact" class="btn-primary text-white font-medium px-6 py-2 rounded-full text-sm"><i class="fas fa-rocket"></i> اجعل مشروعك مميز الآن </a>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-[#0a0a0a]">
+            <div class="container mx-auto px-5">
+              <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-5">آراء <span class="gradient-text">عملائنا</span></h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90">ماذا يقول عملاؤنا عن العمل مع Hexaloom</p>
+              </div>
+              <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="testimonial-card p-8 rounded-lg mb-10 shadow-lg" data-aos="fade-up">
+                  <div class="flex flex-col md:flex-row md:items-center mb-5">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mb-3 md:mb-0 md:mr-5">
+                      <img src="brazilian.jpg" alt="تصميم موقع لشركة تقنية ناشئة" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold">البن البرازيلي-Brazilian Coffee</h3>
+                      <p class="text-sm opacity-70">البن البرازيلي-Brazilian Coffee</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-800 dark:text-gray-200 text-lg leading-relaxed mb-4 text-right">
+                    <span class='font-semibold text-purple-600'>Hexaloom</span> كان نقطة تحول لفروعنا.
+                    إبداعهم واحترافيتهم التقنية نتج عنه موقع مذهل أداءً وشكلًا. أوصي بهم بكل ثقة!
+                  </p>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg mb-10 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                  <div class="flex flex-col md:flex-row md:items-center mb-5">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mb-3 md:mb-0 md:mr-5">
+                      <img src="fathy.jpg" alt=" Fathy Mashaly" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold">Fathy Mashaly</h3>
+                      <p class="text-sm opacity-70">مالك فروع البن البرازيلي</p>
+                    </div>
+                  </div>
+                  <p class="text-lg opacity-90 ">تعاملت معهم في تصميم موقعي الشخصي وكنت مندهش من مستوي الاحترافيه والسرعه في التنفيذ</p>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg mb-10 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                  <div class="flex flex-col md:flex-row md:items-center mb-5">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mb-3 md:mb-0 md:mr-5">
+                      <img src="حسنين.jpg" alt="حسنين ابوالوفا" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-semibold">الحسيني للمقاولات</h3>
+                      <p class="text-sm opacity-70">الحسيني للمقاولات</p>
+                    </div>
+                  </div>
+                  <p class="text-lg opacity-90 ">من أفضل الشركات التي تعاملت معها. سرعة في الإنجاز وإبداع في التصميم ودعم فني متواصل</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-[#121212]">
+            <div class="container mx-auto px-5">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">تواصل <span class="gradient-text">معنا</span></h2>
+                    <p class="text-lg max-w-2xl mx-auto opacity-90">هل لديك مشروع في بالك؟ يسعدنا الاستماع إليك. دعنا نُبدع معًا.</p>
+                </div>
+                <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <form id="whatsapp-form" class="space-y-6">
+                        <div>
+                            <label for="service-select" class="sr-only">اختر الخدمة</label>
+                            <select id="service-select" required class="w-full bg-[#1f1f1f] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#6c63ff]">
+                                <option value="" disabled selected>اختر الخدمة...</option>
+                                <option value="Web Development">تطوير مواقع</option>
+                                <option value="UI/UX Design">تصميم واجهات وتجربة مستخدم</option>
+                                <option value="Digital Marketing">تسويق رقمي</option>
+                                <option value="SEO Optimization">تحسين محركات البحث (SEO)</option>
+                                <option value="Other Inquiry">استفسار آخر</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message-input" class="sr-only">رسالتك</label>
+                            <textarea id="message-input" required placeholder="اكتب رسالتك هنا..." rows="5" class="w-full bg-[#1f1f1f] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#6c63ff]"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary text-white font-medium px-8 py-3 rounded-full text-lg">إرسال عبر واتساب</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a0a] py-10 relative z-10">
+        <div class="container mx-auto px-5 text-center">
+            <a href="#home"><img src="logo.png" alt="Hexaloom Logo" class="h-8 mx-auto mb-5"></a>
+            <div class="flex justify-center space-x-6 mb-5">
+                <a href="https://www.facebook.com/hexaloom" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@hexaloom" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/hexaloom/" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/hexaloom_official" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/Hexaloom" class="text-gray-400 hover:text-white transition"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Hexaloom جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#home" class="fixed bottom-5 right-5 z-50 p-3 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-all duration-300 shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+ 
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
